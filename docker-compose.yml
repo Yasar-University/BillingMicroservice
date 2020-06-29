@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  billingmicroservice:
+    image: ${DOCKER_REGISTRY-}billingmicroservice
+    build:
+      context: .
+      dockerfile: BillingMicroservice\Dockerfile
